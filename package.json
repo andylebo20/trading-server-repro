@@ -1,0 +1,74 @@
+{
+  "name": "trading-server",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "jest --passWithNoTests",
+    "start": "cross-env IS_DEV=false npm run build; node build/index.js",
+    "dev": "cross-env IS_DEV=true nodemon src/index.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@babel/preset-typescript": "^7.10.4",
+    "@jest/globals": "^26.6.2",
+    "@types/chai": "^4.2.14",
+    "@types/mongoose": "^5.10.2",
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-promise-router": "^4.0.1",
+    "faker": "^5.1.0",
+    "firebase-admin": "^8.12.1",
+    "firebase-functions": "^3.7.0",
+    "firebase-mock": "^2.3.2",
+    "fs": "0.0.1-security",
+    "jest-cli": "^26.0.1",
+    "lodash": "^4.17.19",
+    "mocha": "^7.2.0",
+    "moment": "^2.26.0",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.10.18",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.4",
+    "request": "^2.88.2",
+    "rimraf": "^3.0.2",
+    "slack-node": "^0.1.8",
+    "ts-jest": "^26.4.4",
+    "ts-node-dev": "^1.0.0-pre.56",
+    "typescript": "^3.9.7"
+  },
+  "config": {
+    "mongodbMemoryServer": {
+      "debug": "1"
+    }
+  },
+  "description": "Trading api",
+  "directories": {
+    "test": "tests"
+  },
+  "engines": {
+    "node": "14.5.x"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "babel-jest": "^26.2.2",
+    "cross-env": "^7.0.2",
+    "jest": "^26.6.3",
+    "jest-environment-node": "23.4.0",
+    "mongodb-memory-server": "^6.2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andylebo20/trading-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andylebo20/trading-server/issues"
+  },
+  "homepage": "https://github.com/andylebo20/trading-server#readme"
+}

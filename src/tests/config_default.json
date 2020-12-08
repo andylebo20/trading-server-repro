@@ -1,0 +1,11 @@
+{
+  "Memory": true,
+  "DataBase": "trading-prod",
+  "Port": 27017,
+  "Auth": {
+    "DB": "",
+    "User": "",
+    "Passwd": ""
+  },
+  "IP": "localhost"
+}
